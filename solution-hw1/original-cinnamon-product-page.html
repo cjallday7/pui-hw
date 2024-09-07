@@ -9,35 +9,38 @@
 
     <hr>
 
-    <nav>
+    <nav class="navigation">
       <p><a href="./index.html">PRODUCTS</a></p>
       <p><a href="./shopping-cart.html">CART</a></p>
     </nav>
 
-    <p>Original Cinnamon Roll</p>
-    <img src="../assets/products/original-cinnamon-roll.jpg"/>
-    <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
-    <p>Glazing</p>
-    <select name="glaze-options" id="glaze-options">
-      <option value="keep-original">Keep Original</option>
-      <option value="sugar-milk">Sugar Milk</option>
-      <option value="vanilla-milk">Vanilla Milk</option>
-      <option value="double-chocolate">Double Chocolate</option>
-    </select>
+    <main class="container">
+      <h3 class="header">Original Cinnamon Roll</h3>
+      <img class="product-detail-image" src="../assets/products/original-cinnamon-roll.jpg"/>
+      <p>Customize our delicious, hand-made cinnamon roll to your liking!</p>
+      <p>Glazing</p>
+      <select name="glaze-options" id="glaze-options">
+        <option value="keep-original">Keep Original</option>
+        <option value="sugar-milk">Sugar Milk</option>
+        <option value="vanilla-milk">Vanilla Milk</option>
+        <option value="double-chocolate">Double Chocolate</option>
+      </select>
 
 
-    <p>Pack Size</p>
-    <select name="pack-size" id="pack-size">
-      <option value="one">1</option>
-      <option value="three">3</option>
-      <option value="six">6</option>
-      <option value="twelve">12</option>
-    </select>
+      <p>Pack Size</p>
+      <select name="pack-size" id="pack-size">
+        <option value="one">1</option>
+        <option value="three">3</option>
+        <option value="six">6</option>
+        <option value="twelve">12</option>
+      </select>
+    </main> 
 
-    <p>$2.49</p>
-    <button id="add-to-cart">
-
-      Add To Cart
-    </button>
+    <section class="get-the-roll">
+      <p>$2.49</p>
+        <button id="add-to-cart">
+          Add To Cart
+        </button>
+    </section>
   </body>
 </html>
