@@ -18,9 +18,11 @@ hr {
     display: flex;
     flex-flow: column;
     align-items: center;
-    .cart-page {
-        margin: 0px;
-    }
+}
+
+.navigation,
+.cart-page {
+    margin: 0px;
 }
 
 .product-page{
@@ -34,10 +36,12 @@ hr {
 a {
     color: black;
     text-decoration: none;
-    .roll-title {
-        text-decoration: underline;
-    }
 }
+
+.roll-title {
+    text-decoration: underline;
+}
+
 
 .product{
     padding: 10px;
@@ -60,10 +64,11 @@ a {
 
 .product:hover{
     background-color: yellow;
-    .roll-title {
-            font-weight: bolder;
-            text-decoration: none;
-        }
+}
+
+.product:hover .roll-title {
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .container {
