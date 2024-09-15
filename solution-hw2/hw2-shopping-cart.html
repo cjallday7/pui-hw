@@ -5,34 +5,49 @@
 <title>Shopping Cart</title>
 
 <body>
-    <a href="./hw2-index.html"><img class="logo" alt="Bun Bun Bakeshop Logo" src="../assets/logo/logo-01.svg"></a>
+    <div class="top-page">
+      <a href="./hw2-index.html"><img class="logo" alt="Bun Bun Bakeshop Logo" src="../assets/logo/logo-01.svg"></a>
 
-    <hr>
+      <div class="top-page-column">
+        <nav class="navigation">
+          <p class="product-page"><a href="./hw2-index.html">PRODUCTS</a></p>
+          <p class="cart-page"><a href="./hw2-shopping-cart.html">CART</a></p>
+        </nav>
 
-    <nav class="navigation">
-        <p id="product-page"><a href="./hw2-index.html">PRODUCTS</a></p>
-        <p id="cart-page"><a href="./hw2-shopping-cart.html">CART</a></p>
-    </nav>
+        <hr>
 
-    <h3 class="header">Shopping Cart</h3>
+      </div>
+    </div>
+
+    <h3 class="header">Our hand-made cinnamon rolls</h3>
 
     <main class="final-items">
-        <div>
+        <div class="item1">
             <img class="shopping-cart-image" alt="Original Cinnamon Roll" src="../assets/products/original-cinnamon-roll.jpg">
-            <h5 class="remove">Remove</h5>
-            <p>Original Cinnamon Roll</p>
-            <p>Glazing: Keep Original</p>
-            <p>Pack Size: 1</p>
+            <div class="final-description">
+                <p>Original Cinnamon Roll</p>
+                <p>Glazing: Keep Original</p>
+                <p>Pack Size: 1</p>
+            </div>
+            
+
             <p class="price">$2.49</p>
         </div>
-        <div>
+
+        <h5 class="remove">Remove</h5>
+
+        <div class="item2">
             <img class="shopping-cart-image" alt="Double Chocolate Cinnamon Roll" src="../assets/products/double-chocolate-cinnamon-roll.jpg">
-            <h5 class="remove">Remove</h5>
-            <p>Double Chocolate Cinnamon Roll</p>
-            <p>Glazing: Sugar Milk</p>
-            <p>Pack Size: 6</p>
+            <div class="final-description">
+                <p>Double Chocolate Cinnamon Roll</p>
+                <p>Glazing: Sugar Milk</p>
+                <p>Pack Size: 6</p>
+            </div>
             <p class="price">$27.45</p>
         </div>
+
+        <h5 class="remove">Remove</h5>
+
     </main>
 
     <hr id="total-divider">
