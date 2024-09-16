@@ -1,13 +1,15 @@
 /*CSS for HW2 */
 
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .logo {
     width: 400px;
     margin-right: px;
-    border: 3px dashed black
 }
 
 .navigation {
-    border: 3px dashed black;
     display: flex;
     flex-flow: row wrap;
     gap: 40px;
@@ -18,7 +20,6 @@
 
 hr {
     width: 100%;
-    border: 3px dashed red;
     height: 5px;
     background-color: black;
 
@@ -35,12 +36,10 @@ hr {
 .top-page-column {
     display: flex;
     flex-direction: column;
-    border: 3px dashed blue;
     flex-grow: 1;
 }
 
 .top-page {
-    border: 3px dashed black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -107,15 +106,13 @@ a {
 
 .order {
     display: flex;
-    flex: 2;
     flex-direction: row;
-    border: 3px dashed blueviolet;
+    justify-content: center;
 }
 
 .details {
     display: flex;
     flex-direction: column;
-    border: 3px dashed;
     padding: 30px;
     justify-content: space-between;
 
@@ -123,13 +120,11 @@ a {
 
 .description {
     display: flex;
-    border: 3px dashed;
 }
 
 .options {
     display:flex;
     flex-direction: column;
-    border: 3px dashed;
 }
 
 .get-the-roll {
@@ -139,7 +134,6 @@ a {
     align-items: center;
     margin-top: 30px;
     gap: 40px;
-    border: 3px dashed;
 }
 
 #cart-page {
@@ -153,22 +147,24 @@ a {
     display: flex;
     flex-flow: column wrap;
     /* align-items: center; */
-    border: 3px dashed;
-    margin-left: 150px;
+    border-bottom: 5px solid black;
+    width: 1200px;
+    align-items: center ;
+    
 }
 
 .item1 {
     display: flex;
     flex-flow: row wrap;
-    border: 3px dashed red;
     gap: 120px;
+    width: 800px;
 }
 
 .item2 {
     display: flex;
     flex-flow: row wrap;
-    border: 3px dashed red;
     gap: 120px;
+    width: 800px;
 }
 
 .remove {
