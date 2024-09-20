@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Update the price in the HTML
         const priceDisplay = document.querySelector('.get-the-roll h3');
-        priceDisplay.textContent = `$${totalPrice.toFixed(2)}`;
+        priceDisplay.textContent = `${totalPrice.toFixed(2)}`;
     }
 
     // Add event listeners to trigger price update when user changes selections
