@@ -41,14 +41,14 @@ const allPackSizeOptions = [
     }
 ];
     
- // Populate the glazing dropdown
+ // Populate the glazing dropdown (cite: w3schools.com)
 let glazingSelect = document.getElementById('glaze-options');
 for (let i = 0; i < allGlazeOptions.length; i++) {
         let option = new Option(allGlazeOptions[i].name, allGlazeOptions[i].price);
         glazingSelect.add(option);
     }
 
-// Populate the pack size dropdown
+// Populate the pack size dropdown (cite: w3schools.com)
 let packSizeSelect = document.getElementById('pack-size');
 for (let i = 0; i < allPackSizeOptions.length; i++) {
     let option = new Option(allPackSizeOptions[i].description, allPackSizeOptions[i].size);
