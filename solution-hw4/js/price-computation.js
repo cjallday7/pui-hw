@@ -1,79 +1,88 @@
-//Base Price of the Original Cinnamon Roll
-const basePrice = 2.49;
+// Get the rollType from the URL
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const rollType = params.get('roll');
 
-//Glazing Option Variables
-const allGlazeOptions = [
-    {
-        name: "Keep Original",
-        price: 0.00
-    },
-    {
-        name: "Sugar Milk",
-        price: 0.00
-    },
-    {
-        name: "Vanilla Milk",
-        price: 0.50
-    },
-    {
-        name: "Double Chocolate",
-        price: 1.50
-    }
-];
+// Access the roll data from rollsData.js
+const rollData = rolls[rollType];
 
-//Pack Size Variables
-const allPackSizeOptions = [
-    {
-        description: "one",
-        size: 1
-    },
-    {
-        description: "three",
-        size: 3
-    },
-    {
-        description: "six",
-        size: 6
-    },
-    {
-        description: "twelve",
-        size: 12
-    }
-];
-    
- // Populate the glazing dropdown (cite: w3schools.com)
-let glazingSelect = document.getElementById('glaze-options');
-for (let i = 0; i < allGlazeOptions.length; i++) {
-        let option = new Option(allGlazeOptions[i].name, allGlazeOptions[i].price);
-        glazingSelect.add(option);
-    }
+// Update the title and image on the page based on the rollType
+document.querySelector('.header').textContent = `${rollType} Cinnamon Roll`;
+document.querySelector('.product-detail-image').src = `../assets/products/${rollData.imageFile}`;
+document.querySelector('#price').textContent = `${rollData.basePrice.toFixed(2)}`;
 
-// Populate the pack size dropdown (cite: w3schools.com)
-let packSizeSelect = document.getElementById('pack-size');
-for (let i = 0; i < allPackSizeOptions.length; i++) {
-    let option = new Option(allPackSizeOptions[i].description, allPackSizeOptions[i].size);
-    packSizeSelect.add(option);
-    }
-
-// Function to update the price
-function updatePrice() {
-// Get the selected glazing price adaptation
-const glazingPrice = parseFloat(glazingSelect.value);
-        
-// Get the selected pack size price adaptation
-const packPrice = parseFloat(packSizeSelect.value);
-        
-// Calculate the total price
-const totalPrice = (basePrice + glazingPrice) * packPrice;
-    
-// Update the price in the HTML
-const priceDisplay = document.querySelector('.get-the-roll h3');
-priceDisplay.textContent = `${totalPrice.toFixed(2)}`;
+// Class to represent a Roll
+class Roll {
+  constructor(rollType, rollGlazing, packSize, basePrice) {
+    this.type = rollType;
+    this.glazing = rollGlazing;
+    this.size = packSize;
+    this.basePrice = basePrice;
+  }
 }
 
-// Add event listeners to trigger price update when user changes selections
+// Initialize an empty cart array
+const cart = [];
+
+// Glazing and Pack Size Options
+const allGlazeOptions = [
+  { name: "Keep Original", price: 0.00 },
+  { name: "Sugar Milk", price: 0.00 },
+  { name: "Vanilla Milk", price: 0.50 },
+  { name: "Double Chocolate", price: 1.50 }
+];
+
+const allPackSizeOptions = [
+  { description: "1", size: 1 },
+  { description: "3", size: 3 },
+  { description: "6", size: 6 },
+  { description: "12", size: 12 }
+];
+
+// Populate glazing dropdown
+let glazingSelect = document.getElementById('glaze-options');
+allGlazeOptions.forEach(option => {
+  let glazeOption = new Option(option.name, option.price);
+  glazingSelect.add(glazeOption);
+});
+
+// Populate pack size dropdown
+let packSizeSelect = document.getElementById('pack-size');
+allPackSizeOptions.forEach(option => {
+  let packOption = new Option(option.description, option.size);
+  packSizeSelect.add(packOption);
+});
+
+// Function to update the price based on selections
+function updatePrice() {
+  const glazingPrice = parseFloat(glazingSelect.value); // Get selected glazing price
+  const packSize = parseInt(packSizeSelect.value); // Get selected pack size multiplier
+
+  // Calculate total price based on the base price of the roll
+  const totalPrice = (rollData.basePrice + glazingPrice) * packSize;
+  
+  // Update the price display in the DOM
+  const priceDisplay = document.querySelector('#price');
+  priceDisplay.textContent = `$${totalPrice.toFixed(2)}`;
+}
+
+// Add event listeners to update the price when dropdown selections change
 glazingSelect.addEventListener('change', updatePrice);
 packSizeSelect.addEventListener('change', updatePrice);
 
-// Update the price when the page first loads
+// Initially update the price when the page loads
 updatePrice();
+
+// Handle "Add to Cart" button click
+const addToCartButton = document.getElementById('add-to-cart');
+addToCartButton.addEventListener('click', function() {
+  const selectedGlazing = glazingSelect.options[glazingSelect.selectedIndex].text; // Get glazing name
+  const selectedPackSize = parseInt(packSizeSelect.value); // Get pack size
+
+  // Create a new Roll instance and add it to the cart
+  const newRoll = new Roll(rollType, selectedGlazing, selectedPackSize, rollData.basePrice);
+  cart.push(newRoll);
+  
+  // Print the cart to the console (for debugging purposes)
+  console.log(cart);
+});
