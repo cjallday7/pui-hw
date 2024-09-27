@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="./css/styles.css">
-  <script src="./js/price-computation.js" defer></script>
-  <title>Original Cinnamon Roll</title>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/rollsData.js" defer></script>
+    <script src="./js/price-computation.js" defer></script>
+    <title>Product Detail Page</title>
+  </head>
   
   <body>
     <div class="top-page">
       <a href="./index.html"><img class="logo" alt="Bun Bun Bakeshop Logo" src="../assets/logo/logo-01.svg"></a>
-
       <div class="top-page-column">
         <nav class="navigation">
           <p class="product-page"><a href="./index.html">PRODUCTS</a></p>
           <p class="cart-page"><a href="./shopping-cart.html">CART</a></p>
         </nav>
-
         <hr>
-
       </div>
     </div>
 
-      <div class="container">
-        <h1 class="header">Original Cinnamon Roll</h1>
-        <main class="order">
-          <img class="product-detail-image" alt="Original Cinnamon Roll" src="../assets/products/original-cinnamon-roll.jpg">
-          <div class="details">
-            <h2 class="description">Customize our delicious, hand-made cinnamon roll to your liking!</h2>
-            <div class="options">
-              <p>Glazing</p>
-              <select name="glaze-options" id="glaze-options">
-              </select>
+    <div class="container">
+      <!-- Dynamic heading for the selected cinnamon roll type -->
+      <h1 class="header"></h1>
 
+      <main class="order">
+        <!-- Dynamic product image for the selected cinnamon roll in price-computation.js-->
+        <img class="product-detail-image" alt="Cinnamon Roll Image">
+        
+        <div class="details">
+          <h2 class="description">Customize our delicious, hand-made cinnamon roll to your liking!</h2>
+          
+          <div class="options">
+            <!-- Glazing dropdown dynamnically changes in price-computation.js -->
+            <p>Glazing</p>
+            <select name="glaze-options" id="glaze-options">
+              <!-- Options are dynamnically changes in price-computation.js -->
+            </select>
 
-              <p>Pack Size</p>
-              <select name="pack-size" id="pack-size">
-              </select>
-            </div>
+            <!-- Pack Size dropdown dynamnically changes in price-computation.js -->
+            <p>Pack Size</p>
+            <select name="pack-size" id="pack-size">
+              <!-- Options dynamnically changes in price-computation.js -->
+            </select>
+          </div>
 
-            <div class="get-the-roll">
-              <h3 id="price">$2.49</h3>
-                <button id="add-to-cart">
-                  Add To Cart
-                </button>
-            </div>
-        </main>
-      </div>
-  </body>    
+          <!-- Display for total price -->
+          <div class="get-the-roll">
+            <h3 id="price"> <!-- Price dynamnically changes in price-computation.js --> </h3>
+            <button id="add-to-cart">Add To Cart</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
