@@ -1,15 +1,15 @@
 // Get the rollType from the URL
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
-const rollType = params.get('roll');
+const rollType = params.get("roll");
 
 // Access the roll data from rollsData.js
 const rollData = rolls[rollType];
 
 // Update the title and image on the page based on the rollType
-document.querySelector('.header').textContent = `${rollType} Cinnamon Roll`;
-document.querySelector('.product-detail-image').src = `../assets/products/${rollData.imageFile}`;
-document.querySelector('#price').textContent = `${rollData.basePrice.toFixed(2)}`;
+document.querySelector(".header").textContent = `${rollType} Cinnamon Roll`;
+document.querySelector(".product-detail-image").src = `../assets/products/${rollData.imageFile}`;
+document.querySelector("#price").textContent = `${rollData.basePrice.toFixed(2)}`;
 
 // Class to represent a Roll
 class Roll {
@@ -40,14 +40,14 @@ const allPackSizeOptions = [
 ];
 
 // Populate glazing dropdown
-let glazingSelect = document.getElementById('glaze-options');
+let glazingSelect = document.getElementById("glaze-options");
 allGlazeOptions.forEach(option => {
   let glazeOption = new Option(option.name, option.price);
   glazingSelect.add(glazeOption);
 });
 
 // Populate pack size dropdown
-let packSizeSelect = document.getElementById('pack-size');
+let packSizeSelect = document.getElementById("pack-size");
 allPackSizeOptions.forEach(option => {
   let packOption = new Option(option.description, option.size);
   packSizeSelect.add(packOption);
@@ -62,20 +62,20 @@ function updatePrice() {
   const totalPrice = (rollData.basePrice + glazingPrice) * packSize;
   
   // Update the price display in the DOM
-  const priceDisplay = document.querySelector('#price');
+  const priceDisplay = document.querySelector("#price");
   priceDisplay.textContent = `$${totalPrice.toFixed(2)}`;
 }
 
 // Add event listeners to update the price when dropdown selections change
-glazingSelect.addEventListener('change', updatePrice);
-packSizeSelect.addEventListener('change', updatePrice);
+glazingSelect.addEventListener("change", updatePrice);
+packSizeSelect.addEventListener("change", updatePrice);
 
 // Initially update the price when the page loads
 updatePrice();
 
 // Handle "Add to Cart" button click
-const addToCartButton = document.getElementById('add-to-cart');
-addToCartButton.addEventListener('click', function() {
+const addToCartButton = document.getElementById("add-to-cart");
+addToCartButton.addEventListener("click", function() {
   const selectedGlazing = glazingSelect.options[glazingSelect.selectedIndex].text; // Get glazing name
   const selectedPackSize = parseInt(packSizeSelect.value); // Get pack size
 
