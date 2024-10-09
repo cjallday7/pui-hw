@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/cart.js" defer></script>
+        <title>Shopping Cart</title>
+    </head>
+
+    <body>
+        <div class="top-page">
+        <a href="./index.html">
+            <img class="logo" alt="Bun Bun Bakeshop Logo" src="../assets/logo/logo-01.svg">
+        </a>
+        <div class="top-page-column">
+            <nav class="navigation">
+                <p class="product-page"><a href="./index.html">PRODUCTS</a></p>
+                <p id="cart-page"><a href="./shopping-cart.html">CART</a></p>
+            </nav>
+            <hr>
+        </div>
+    </div>
+
+    <h3 class="header">Our hand-made cinnamon rolls</h3>
+
+    <main class="final-items" id="cart-items">
+        <!-- Dynamically populated cart items will appear here -->
+    </main>
+
+    <footer>
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <button id="checkout">Checkout</button>
+    </footer>
+
+    </body>
+
+</html>
