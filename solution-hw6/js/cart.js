@@ -12,6 +12,56 @@ class Roll {
     }
 }
 
+window.onload = function() {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const cartItemsContainer = document.getElementById('cart-items');
+  const totalPriceElement = document.getElementById('total-price');
+
+  // Function to update the total price
+  function updateTotalPrice() {
+    let totalPrice = 0;
+    cart.forEach(item => {
+      totalPrice += item.basePrice;
+    });
+    totalPriceElement.textContent = totalPrice.toFixed(2);
+  }
+
+  // Function to render cart items
+  function renderCartItems() {
+    cartItemsContainer.innerHTML = '';  // Clear previous items
+
+    cart.forEach((item, index) => {
+      const cartItem = document.createElement('div');
+      cartItem.classList.add('cart-item');
+      cartItem.innerHTML = `
+        <p>${item.type} - Glazing: ${item.glazing} - Pack Size: ${item.size} - Price: $${item.basePrice}</p>
+        <button class="remove-item" data-index="${index}">Remove</button>
+      `;
+      cartItemsContainer.appendChild(cartItem);
+    });
+  }
+
+  // Render the items and update the total price
+  renderCartItems();
+  updateTotalPrice();
+
+  // Remove item from cart
+  cartItemsContainer.addEventListener('click', function(event) {
+    if (event.target.classList.contains('remove-item')) {
+      const itemIndex = event.target.getAttribute('data-index');
+      cart.splice(itemIndex, 1);  // Remove the item from the cart array
+
+      // Update localStorage and re-render the cart
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCartItems();
+      updateTotalPrice();
+
+      // Print the current contents of the cart in the console for debugging
+      console.log('Updated Cart:', JSON.parse(localStorage.getItem('cart')));
+    }
+  });
+};
+
 // Initialize cart with four items
 let cart = [
     new Roll('Original', 'Sugar Milk', 1, 2.49),
