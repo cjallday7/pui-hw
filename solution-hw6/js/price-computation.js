@@ -21,6 +21,30 @@ class Roll {
   }
 }
 
+window.onload = function() {
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  const addToCartButton = document.getElementById('add-to-cart');
+  addToCartButton.addEventListener('click', function() {
+    // Get selected options from the page
+    const rollType = document.querySelector('.header').textContent;  // Assuming the roll type is in the header
+    const rollGlazing = document.getElementById('glaze-options').value;
+    const packSize = document.getElementById('pack-size').value;
+    const rollPrice = document.getElementById('price').textContent.replace('$', '');
+
+    // Create a new Roll object and add it to the cart array
+    const newRoll = new Roll(rollType, rollGlazing, packSize, parseFloat(rollPrice));
+    cart.push(newRoll);
+
+    // Save the updated cart to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Print the current contents of the cart in the console for debugging
+    console.log('Cart:', JSON.parse(localStorage.getItem('cart')));
+  });
+};
+
+
 // Initialize an empty cart array
 const cart = [];
 
