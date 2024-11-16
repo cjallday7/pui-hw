@@ -1,37 +1,64 @@
+<!-- home.html -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="./css/styles.css">
-    </head>
-    
-    <body>
-        <div class="header">
-            <div class="home">
-                <a href="index.htm">christian johnson</a>
-            </div>
-            <div class = navigation>
-                <a href = "./index.html">work</a>
-                <a href = "./about.html">about</a>
-                <a href = "./contact.html">resume</a>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Johnson - Portfolio</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1><a href="./home.html">christian johnson</a></h1>
+    <nav class="nav">
+      <ul>
+        <li><a href = "./index.html">work</a></li>
+        <li><a href = "./about.html">about</a></li>
+        <li><a href = "./contact.html">resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <img class ="hero-picture" src="./images/hero.jpeg" alt="Hero Image">
+      <p>
+        Hi, I'm Christian Johnson, a Marketing Program Manager with a passion for developing impactful marketing campaigns.
+        I transitioned from the non-profit sector and bring a unique perspective to strategy and project management.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Description of project 1.</p>
+          <a href="#">View Project</a>
         </div>
-
-        <div class="hero">
-            <div class="hero-overlay">
-                <img class ="hero-picture" src="./images/hero.jpeg" alt="Hero Image">
-            </div>
-
-            <div class="hero-text">
-                <h1 class="intro">Hi 👋 I'm Christian Johnson</h1>
-                <p class="rotatingText">
-                    I'm a
-
-                    <span class="rotatingText-adjective">Interaction Designer</span>
-                    <span class="rotatingText-adjective">Game Designer</span>
-                    <span class="rotatingText-adjective">Product Designer</span>
-                </p>
-            </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Description of project 2.</p>
+          <a href="#">View Project</a>
         </div>
-    </body>
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Connect with me on:</p>
+    <ul class="social-links">
+      <li><a href="https://linkedin.com/in/christian-johnson">LinkedIn</a></li>
+      <li><a href="https://github.com/christianjohnson">GitHub</a></li>
+    </ul>
+    <p>&copy; 2024 Christian Johnson. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
