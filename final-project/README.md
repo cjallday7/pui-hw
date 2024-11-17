@@ -83,22 +83,44 @@ Outline weekly milestones to plan your expected implementation progress until th
 ### *Implementation Plan*
 
 - [X] Week 9 Oct 28 \- Nov 1:
-  - [X] FP1 due
+  - [X] FP1 Due
+  - [X] Choose the final direction of the project based on feedback and feasibility.
+  - [X] Develop lo-fi prototypes to explore different design layouts and features.
+  - [X] Create two hi-fi prototypes, incorporating essential UI elements.
+  - [X] Conduct the first round of usability testing to gather early insights.
   
 - [X] Week 10 Nov 4 \- Nov 8:   
-  - [X] FP2 due
+  - [X] FP2 Due
+  - [X] Create wireframes and lo-fi prototypes based on the feedback from 11/3. This will serve as a general outline for the larger platform to come.
+  - [ ] Refine the Figma prototype, incorporating interactive elements. This will serve as the basis for core concept of the portfolio.
 
 - [ ] Week 11 Nov 11 \- Nov 15:  
-- [ ] Week 12 Nov 18 \- Nov 22:   
-- [ ] Week 13 Nov 25 \- Nov 29:  
+  - [ ] Complete HTML template for the map and phrases pages before JS implementation.
+  - [ ] Apply CSS to replicate the styling in the Figma prototype.
+    - [ ] Outline components and define reusable styles
 
-  - [ ] Thanksgiving  
+- [ ] Week 12 Nov 18 \- Nov 22:
+  - [ ] FP3 Due   
+  - [ ] Set up JavaScript libraries necessary for interactive features, such as rotating text animations and dark mode/light mode.
+  - [ ] Implement the functionality for hovering over Projects
+  - [ ] Develop the tag functionality on the Works/Projects page
+  - [ ] Create wireframe and lo-fi prototype for Project pages. This will be used to create multiple pages based on selections.
+
+- [ ] Week 13 Nov 25 \- Nov 29:  
+  - [ ] Finalize the filter/tag functionality on the Works/Projects page, enabling employers to refine their interests by tags.
+  - [ ] Create a simple About Page
+  - [ ] Thanksgiving
+    - [ ] buffer for catching up or refining previously completed tasks.
+
 - [ ] Week 14 Dec 2 \- Dec 6:  
+  - [ ] Complete styling for mobile breakpoints.
+  - [ ] Perform comprehensive testing for responsiveness and semantic structure, addressing any accessibility issues.
   - [ ] FP4 due 
+
 
 ### *Libraries and Other Components*
 
-* Anime.js
+* Anime.js ([https://animejs.com/])
 * React.js
 
 
@@ -126,5 +148,54 @@ Documentation is essential for code readability and future maintenance. AI can a
 
 The Responsible Use of Generative AI is paramount to this project. Comments will
 left in the code files, denoting when and where Generative AI has been used.
+
+---
+
+# **FP3 \- Final Project Check-in**
+
+Document the changes and progress of your project. How have you followed or changed your implementation & GenAI use plan and why? Remember to commit your code to save your progress.
+
+## Implementation Plan Updates
+
+- [X] Week 9 Oct 28 \- Nov 1:
+  - [X] FP1 Due
+  - [X] Choose the final direction of the project based on feedback and feasibility.
+  - [X] Develop lo-fi prototypes to explore different design layouts and features.
+  - [X] Create two hi-fi prototypes, incorporating essential UI elements.
+  - [X] Conduct the first round of usability testing to gather early insights.
+  
+- [X] Week 10 Nov 4 \- Nov 8:   
+  - [X] FP2 Due
+  - [X] Create wireframes and lo-fi prototypes based on the feedback from 11/3. This will serve as a general outline for the larger platform to come.
+  - [X] Refine the Figma prototype, incorporating interactive elements. This will serve as the basis for core concept of the portfolio.
+
+- [X] Week 11 Nov 11 \- Nov 15:  
+  - [X] Complete HTML template for the map and phrases pages before JS implementation.
+  - [X] Apply CSS to replicate the styling in the Figma prototype.
+    - [ ] Outline components and define reusable styles
+
+- [ ] Week 12 Nov 18 \- Nov 22:
+  - [X] FP3 Due   
+  - [ ] Set up JavaScript libraries necessary for interactive features, such as rotating text animations and dark mode/light mode.
+  - [ ] Implement the functionality for hovering over Projects
+  - [ ] Develop the tag functionality on the Works/Projects page
+  - [ ] Create wireframe and lo-fi prototype for Project pages. This will be used to create multiple pages based on selections.
+
+- [ ] Week 13 Nov 25 \- Nov 29:  
+  - [ ] Finalize the filter/tag functionality on the Works/Projects page, enabling employers to refine their interests by tags.
+  - [ ] Create a simple About Page
+  - [ ] Thanksgiving
+    - [ ] buffer for catching up or refining previously completed tasks.
+
+- [ ] Week 14 Dec 2 \- Dec 6:  
+  - [ ] Complete styling for mobile breakpoints.
+  - [ ] Perform comprehensive testing for responsiveness and semantic structure, addressing any accessibility issues.
+  - [ ] FP4 due 
+
+## Generative AI Use Plan Updates
+
+- No updates. Generative AI has not been used so far.
+
+Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-generative-ai-use-and-reflection).
 
 ---
