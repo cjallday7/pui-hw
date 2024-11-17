@@ -58,6 +58,7 @@ body {
 }
 
 .hero-picture {
+    display: flex;
     width: 450px;
     border-radius: 40px;
 }
