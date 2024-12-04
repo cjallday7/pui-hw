@@ -6,7 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christian Johnson - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/home.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -21,7 +24,7 @@
   </header>
 
   <main>
-    <!-- About Section -->
+    <!-- Hero Section -->
     <section id="hero" class="hero-section">
       <img class ="hero-picture" src="./images/hero.jpeg" alt="Hero Image">
       <div class="hero-text">
@@ -36,49 +39,15 @@
             </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-      <h2>My Projects</h2>
-      <div class="project-list">
-        <div class="project-card">
-          <h3>Project 1</h3>
-          <p>Description of project 1.</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-          <h3>Project 2</h3>
-          <p>Description of project 2.</p>
-          <a href="#">View Project</a>
-        </div>
-        <!-- Add more project cards as needed -->
-      </div>
+    <!--What I Do Header-->
+    <section id="what-i-do" class="what-i-do-section">
+      <h1>💻 What I Did</h1>
     </section>
-  </main>
 
-  <footer class="footer">
-    <p>Connect with me on:</p>
-    <ul class="social-links">
-      <li><a href="https://linkedin.com/in/christian-johnson">LinkedIn</a></li>
-      <li><a href="https://github.com/cjallday7">GitHub</a></li>
-    </ul>
-    <p>&copy; 2024 Christian Johnson. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
-
-<div class="m-container py-0 px-0 sticky top-header-h 2xl:top-header-h-2xl md:top-header-h-md  z-10 bg-colorMarbleLightest backdrop-blur-md mb-8 border-b border-colorShadow  ">
+    <!-- Tags Section -->
+        <div class="m-container py-0 px-0 sticky top-header-h 2xl:top-header-h-2xl md:top-header-h-md  z-10 bg-colorMarbleLightest backdrop-blur-md mb-8 border-b border-colorShadow  ">
                             <div class="flex flex-row items-center">
                                 <div class=" w-full h-12 mobile-l:h-16 relative overflow-hidden">
-                                    <div class="absolute z-10 left-0 bg-gradient-to-r from-colorMarbleLightest via-colorMarbleLightest w-12 mobile-l:w-20 h-full flex items-center justify-center">
-                                        <button class="mr-6 mobile-l:mr-8 p-1">
-                                            <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
                                     <div class=" absolute top-0 left-0 px-2 md:px-8 py-2 w-full mobile-l:py-4   flex items-center overflow-x-auto flex-row text-sm ">
                                         <a>
                                             <button class="text-colorLink category-tag border border-colorAltLight hover:bg-colorAltLight whitespace-pre selected">
@@ -154,13 +123,38 @@
                                             </button>
                                         </a>
                                     </div>
-                                    <div class="absolute right-0 bg-gradient-to-l from-colorMarbleLightest via-colorMarbleLightest w-12 mobile-l:w-20 h-full flex items-center justify-center">
-                                        <button class="ml-6 mobile-l:ml-8 p-1">
-                                            <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                            </svg>
-                                        </button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Description of project 1.</p>
+          <a href="project.html">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Description of project 2.</p>
+          <a href="project.html">View Project</a>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Connect with me on:</p>
+    <ul class="social-links">
+      <li><a href="https://linkedin.com/in/christian-johnson">LinkedIn</a></li>
+      <li><a href="https://github.com/cjallday7">GitHub</a></li>
+    </ul>
+    <p>&copy; 2024 Christian Johnson. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
