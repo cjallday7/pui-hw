@@ -1,0 +1,70 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10%;
+}
+
+.project-image{
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.project-date{
+    font-size:medium;
+    color:gray;
+}
+
+.project-title{
+    font-weight: bold;
+}
+
+.project-description{
+    font-size: medium;
+}
+
+.project-tags{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 50px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#platform-tools{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.responsibilities{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.orcasound-portfolio-images{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.slide{
+    width: 100%;
+}
