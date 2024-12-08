@@ -286,3 +286,23 @@ body {
         width: 80%;
     }
 }
+
+/*Theme Switcher*/
+body[data-theme="light"] {
+    background-color: #ffffff;
+    color: #000000;
+    /* Default text color for light mode */
+}
+
+body[data-theme="dark"] {
+    background-color: #000000;
+    color: #ffffff;
+    /* Default text color for dark mode */
+}
+
+button.theme {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
