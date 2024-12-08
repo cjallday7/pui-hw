@@ -1,0 +1,20 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10%;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
