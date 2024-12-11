@@ -36,7 +36,7 @@ main{
 
 body[data-theme='light'] .project-date{
     font-size:medium;
-    color:gray;
+    color:crimson;
 }
 
 body[data-theme='dark'] .project-date{
