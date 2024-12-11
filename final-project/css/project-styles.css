@@ -1,23 +1,47 @@
+/*project-styles.css*/
+
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 10%;
+    margin: 0 20%;
 }
 
-.project-image{
-    display: flex;
-    border: 1px solid black;
+.project-image-container{
+    position: relative;
     width: 100%;
-    align-items: center;
+}
+.project-image{
+    display: block;
+    width: 100%;
+    justify-content: center;
     object-fit: cover;
     border-radius: 10px;
+    margin-top: 24px;
     margin-bottom: 24px;
 }
 
-.project-date{
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+body[data-theme='light'] .project-date{
     font-size:medium;
     color:gray;
+}
+
+body[data-theme='dark'] .project-date{
+    font-size:medium;
+    color:#00ffee;
 }
 
 .project-title{
@@ -35,6 +59,7 @@ main{
     margin-bottom: 10px;
     margin: 50px;
 }
+
 .details{
     display: flex;
     justify-content: space-between;
@@ -57,7 +82,6 @@ main{
 .orcasound-portfolio-images{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     width: 100%;
     align-items: center;
     object-fit: cover;
