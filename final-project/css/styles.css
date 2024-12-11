@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0px 60px;
     background-color: #333;
     color: white;
 }
@@ -29,9 +29,20 @@ body {
     font-size: 24px;
 }
 
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
 .nav ul {
     list-style: none;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 
@@ -313,12 +324,12 @@ button:hover {
 /*Theme Switcher*/
 body[data-theme="light"] {
     background-color: #ffffff;
-    color: #000000;
+    color: #333;
     /* Default text color for light mode */
 }
 
 body[data-theme="dark"] {
-    background-color: #000000;
+    background-color: #333;
     color: #ffffff;
     /* Default text color for dark mode */
 }
