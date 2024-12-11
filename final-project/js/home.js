@@ -1,3 +1,5 @@
+import 'animate.css';
+
 document.addEventListener('DOMContentLoaded', () => {
   // Animate rotating text in hero section using Animate.css classes
   const rotatingTextAdjectives = document.querySelectorAll('.rotatingText-adjective');
