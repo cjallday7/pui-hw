@@ -293,3 +293,8 @@ At the beginning of this project, I stated that I would be using both ChatGPT an
 1. https://chatgpt.com/share/6759c96e-5a14-800e-af1c-471fb20eb2e4
 
 ---
+
+### Accessibility Check - WAVE
+![accessibility check of home page](./images/image.png)
+![accessibility check of project page](./images/image-1.png)
+![Accessibility check of about page](./images/image-2.png)
