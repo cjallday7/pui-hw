@@ -7,6 +7,42 @@ main {
 
 }
 
+body[data-theme="light"] span{
+    font-weight: bold;
+    color:crimson;
+    transition-duration: 0.4s;
+}
+
+body[data-theme="dark"] span{
+    font-weight: bold;
+    color: #0fe;
+    transition-duration: 0.4s;
+}
+
+body[data-theme="light"] .about-me {
+    font-weight: bold;
+    color: crimson;
+    transition-duration: 0.4s;
+}
+
+body[data-theme="dark"] .about-me {
+    font-weight: bold;
+    color: #0fe;
+    transition-duration: 0.4s;
+}
+
+body[data-theme="light"] .my-skills {
+    font-weight: bold;
+    color: crimson;
+    transition-duration: 0.4s;
+}
+
+body[data-theme="dark"] .my-skills {
+    font-weight: bold;
+    color: #0fe;
+    transition-duration: 0.4s;
+}
+
 .row1 {
     display: flex;
     flex-direction: row;
