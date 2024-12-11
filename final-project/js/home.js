@@ -37,7 +37,7 @@ function showHide() {
   } else {
     x.style.display = "none";
   }
-}
+};
 
 // Get the button:
 let mybutton = document.getElementById("myBtn");
