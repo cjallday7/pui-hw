@@ -211,14 +211,9 @@ This website is designed to be my own Personal Portfolio for my User Experience 
 
 As typical with a portfolio, the key audience are not only recruiters and hiring managers, but also the general public as this will be a public facing website.
 
-In order to make this design accessible, I'll be adhering to the WCAG guidelines and practices. There are also been talks off adding a day/night mode for contrast variations.
+In order to make this design accessible, I'll be adhering to the WCAG guidelines and practices. This includes a day/night mode for contrast variations.
 
-Describe your website (300 words).
-
-* What is the purpose of your website?   
-* Who is the target audience?  
-* What information do you convey with your website?   
-* How is it interesting and engaging? 
+What makes this website engaging the the ability to switch between dark and light mode and animations.
 
 ## Part 2: User Interaction
 
@@ -229,84 +224,72 @@ Interaction type. Click on X on page Y / scroll on page X, etc.
 1. Click on "Switch Mode" in the header to change from Light Mode to Dark Mode.  
 2. Click on the tags on the Home/Work page to show and hide the projects.
 3. Hover over the buttons on all pages to show change their color.
-4. [TO BE ADDED] Hover over header links to highlight them.
+4. Text animation over an image.
+5. Changes in text contrast depending on Dark or Light Mode.
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+1. Animate.css (https://animate.style/) 
+   * I chose Animate.css because it seemed to be the easiest to implement at the time.  
+   * It's currently used for text animations 
+   * It addeds a sense of flair and motion to the project.  
 
 ## Part 4: Design Iteration
 
-Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
+There were several iterations between the initial prototype and this current iteration. The main reason being that I was unsure if my ideas would be enough for full marks or if my iddeas were too grand for my current skillset. I wanted to include a game within my portfolio but that felt too far out of scope so I scrapped that idea. I think this project came together beautifully and I'm happy with this current design. Although, it can always be worked on to improve further.
 
 ## Part 5: Implementation Challenge
 
-What challenges did you experience in implementing your website? (2-4 sentences max)
+The main challenge I experienced while designing this project was how to use libraries or frameworks. Using a framework like React would have made this project so much easier but I didn't know how to implement it at the time, so I went with what I knew. The other challenge was trying to translate my big ideas into code.
 
 ## Part 6: Generative AI Use and Reflection
 
-Describe how you used Generative AI tools to create this final project (fill in the following information, write \~500 words in total).
+At the beginning of this project, I stated that I would be using both ChatGPT and Github Copilot. However, I didn't use Copilot for this project. I couldn't figure out how to make it work so I used ChatGPT solely as my Generative AI debugger and Intellesense to fill in code when needed. 
 
-Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
 
 ### Usage Experiences by Project Aspects
 
-Feel free to edit the column \_ (other?) or add more columns if there's any other aspect in your project you've used the GenAI tools for.
-
-For the following aspects of your project, edit the corresponding table cell to answer:
 - *Usage*: Whether you used / did not use this tool for the aspect. Enter [Yes/No]
 - *Productivity*: Give a rating on whether this tool makes your productivity for X aspect [1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved].
 
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
-| Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| ChatGPT | Usage | No | No | No | Yes | No |
+| ChatGPT | Productivity | 4 | 4 | 4 | 6 | 4 |
 
 
 ### Usage Reflection
 
 > Impact on your design and plan 
 * It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: Providing helpful debugging code as well as comments and explanations for me to understand what was outputted and how I can do it for myself later.
+  
 * It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: N/A
+
 * GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: It didn't influence my final design or implementation plan because I planned on coding this project by myself first. By doing that and then using ChatGPT to comb through it, the plan stayed intact as well as the final design.
 
 > Use patterns
-* I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
-* I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
+* I accepted the generations when …
+  1. ChatGPT: they made sense. There would be times were lines of code would appear from nowhere and I would have to ask for more clarification.
+
+* I critiqued/evaluated the generated suggestions by … 
+  1. ChatGPT: asking for more clarification
+
 
 
 > Pros and cons of using GenAI tools
 * Pros
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: Getting personalized answers to coding questions rather than waiting on forums to answer (or not).
 * Cons
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: The "hallucinations" can still confuse a begineer programmer.
 
 
 ### Usage Log
 
-Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
-
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
-2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
+1. https://chatgpt.com/share/6759c96e-5a14-800e-af1c-471fb20eb2e4
 
 ---
